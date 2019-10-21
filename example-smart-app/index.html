@@ -9,7 +9,6 @@
     <!--
       Temporarily disable cerner-smart-embeddable-lib
       <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
-
     -->
   </head>
   <body>
@@ -47,6 +46,10 @@
         <tr>
           <th>Height:</th>
           <td id='height'></td>
+        </tr>
+        <tr>
+          <th>Weight:</th>
+          <td id='weight'></td>
         </tr>
         <tr>
           <th>Systolic Blood Pressure:</th>
@@ -90,7 +93,6 @@
         function(p) {
           drawVisualization(p);
         },
-
         //Display 'Failed to call FHIR Service' if extractData failed
         function() {
           $('#loading').hide();
